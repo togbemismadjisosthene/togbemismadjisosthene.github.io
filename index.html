@@ -4,36 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Togbé Mismadji Sosthène</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #0f5269, #1e2340);
-            color: white;
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #ffffff;
         }
-        .container {
-            padding: 40px;
+
+        /* TOP NAVBAR */
+        .navbar {
+            display: flex;
+            gap: 25px;
+            padding: 18px 30px;
+            background: #f2f2f2;
+            border-bottom: 1px solid #ddd;
         }
-        h1 {
-            margin-top: 0;
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
         }
-        p {
+        .navbar a:hover {
+            color: #0077cc;
+        }
+
+        /* HOME LAYOUT */
+        .home-container {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .home-text {
+            width: 60%;
+        }
+
+        .home-text h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .home-text h3 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .home-text p {
+            font-size: 18px;
             line-height: 1.7;
+            margin-top: 20px;
+        }
+
+        /* PHOTO */
+        .home-photo img {
+            width: 300px;
+            border-radius: 10px;
+            border: 3px solid #eee;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Togbé Mismadji Sosthène</h1>
-        <h3>Computer Scientist | Cybersecurity | AI & Data Science</h3>
 
-        <p>
-            Welcome to my personal website!  
-            This page is under construction.  
-            I am building it step by step.
-        </p>
+    <!-- NAVIGATION MENU -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="diplomes.html">Diplômes</a>
     </div>
+
+    <!-- HOME CONTENT -->
+    <div class="home-container">
+        <div class="home-text">
+            <h1>Togbé Mismadji Sosthène</h1>
+            <h3>Computer Scientist • Cybersecurity • AI & Data Science</h3>
+
+            <p>
+                Welcome to my professional academic website.  
+                I am a computer scientist specializing in cybersecurity, 
+                deception strategies, mobile money security, and AI-driven analysis.
+            </p>
+
+            <p>
+                My current research focuses on <strong>using honeypots and game theory 
+                to counter mobile money attacks</strong>.
+            </p>
+        </div>
+
+        <div class="home-photo">
+            <img src="myphoto.jpg" alt="My Photo">
+        </div>
+    </div>
+
 </body>
 </html>
